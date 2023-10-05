@@ -115,7 +115,7 @@ class WeatherViewModel: ObservableObject {
             let feelsLikeText = "Feels like \(weatherData.main.feels_like)\(unitText)"
             let description = weatherData.weather.first?.description ?? ""
             weatherDescription = "\(feelsLikeText). \(description.capitalizedSentence)."
-            highLowTemperature = "\(Int(weatherData.main.temp_max)) / \(Int(weatherData.main.temp_min))\(unitText)"
+            highLowTemperature = "\(Int(weatherData.main.temp_min)) / \(Int(weatherData.main.temp_max))\(unitText)"
         }
     }
     
